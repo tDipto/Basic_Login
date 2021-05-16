@@ -1,4 +1,4 @@
-export const initialState = null;
+export let initialState = null;
 
 export const reducer = (state,action) => {
     if(action.type === "USER") {
@@ -7,3 +7,7 @@ export const reducer = (state,action) => {
 
     return state;
 }
+
+/* initialState = {
+    loggedIn : localStorage.getItem('isLoggedin') || false,
+} */
